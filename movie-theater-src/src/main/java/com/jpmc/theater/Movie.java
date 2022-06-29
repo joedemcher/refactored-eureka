@@ -49,7 +49,7 @@ public class Movie {
       discount = (discount > 3) ? discount : 3;
     } else if (showSequence == 2) {
       discount = (discount > 2) ? discount : 2;
-    } else if (startTime.getHour() > 10 && startTime.getHour() < 16 || (startTime.getHour() == 16 && startTime.getMinute() == 0) || (startTime.getHour() == 11 && startTime.getMinute() == 0)) {
+    } else if (startTime.getHour() > 11 && startTime.getHour() < 16 || (startTime.getHour() == 16 && startTime.getMinute() == 0) || (startTime.getHour() == 11 && startTime.getMinute() == 0)) {
       discount = ((discount > (ticketPrice * 0.25)) ? discount : (ticketPrice * 0.25));
     } else if (startTime.getDayOfMonth() == 7) {
       discount = ((discount > 1) ? discount : 1);
